@@ -5,10 +5,89 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form Project</title>
 </head>
 
 <body>
+  <h1 id="title">Classic BootCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+  <!-- Created fieldset and three inputs -->
+  <form action="" id="survey-form">
+    <fieldset>
+      <label for="name">Name <br> </label>
+      <input type="text" name="name" id="name-label" placeholder="Enter your name" required>
+      <br>
+      <label for="email">Email <br></label>
+      <input type="text" name="email" id="email-label" placeholder="Enter your email">
+      <br>
+      <label for="age"> Age <br> </label>
+      <input type="text" name="age" id="age-label" min="12" max="99" placeholder="Age">
+    </fieldset>
+
+    <!-- Created one select and created six options-->
+    <form action="">
+      <p>Which option best describes your current role?</p>
+      <select name="role" id="dropdown">
+        <option value="select">Select current role</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="learner">Full Time Learner</option>
+        <option value="prefer">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </form>
+
+    <!-- Created three radios-->
+    <form action="">
+      <p>Would you recommend Classic BootCamp to a friend?
+        <br>
+        <input type="radio" name="recommend" id="check" checked="checked">Definitely
+        <input type="radio" name="recommend" id="check">Maybe
+        <input type="radio" name="recommend" id="check">Not sure
+      </p>
+    </form>
+
+    <!-- Created one select and created five options-->
+    <form action="">
+      <p>What is your favorite feature of Classic BootCamp?</p>
+      <select name="features" id="dropdown">
+        <option value="select">Select current role</option>
+        <option value="challenges">Challenges</option>
+        <option value="projects">Projects</option>
+        <option value="community">Community</option>
+        <option value="source">Open Source</option>
+      </select>
+    </form>
+
+    <!-- Created 11 checkboxes-->
+    <form action="">
+      <p>What would you like to see improved?
+        <br>
+        <input type="checkbox" name="improved" id="front">Front-end Projects
+        <br>
+        <input type="checkbox" name="improved" id="back">Back-end Projects
+        <br>
+        <input type="checkbox" name="improved" id="data">Data Visualization
+        <br>
+        <input type="checkbox" name="improved" id="challenges">Challenges
+        <br>
+        <input type="checkbox" name="improved" id="open">Open Source Community
+        <br>
+        <input type="checkbox" name="improved" id="gitter">Gitter help rooms
+        <br>
+        <input type="checkbox" name="improved" id="video">Videos
+        <br>
+        <input type="checkbox" name="improved" id="meetup">City Meetups
+        <br>
+        <input type="checkbox" name="improved" id="forum">Forum
+        <br>
+        <input type="checkbox" name="improved" id="courses">Addition Courses
+      </p>
+    </form>
+
+  </form>
 
 </body>
 
