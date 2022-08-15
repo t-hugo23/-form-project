@@ -16,18 +16,16 @@
   <!-- Created fieldset and three inputs -->
   <form action="" id="survey-form">
     <fieldset>
-      <label for="name">Name <br> </label>
-      <input type="text" name="name" id="name-label" placeholder="Enter your name" required>
+      <label for="name" id="name-label">Name <br> </label>
+      <input type="text" name="name" id="name" placeholder="Enter your name" required>
       <br>
-      <label for="email">Email <br></label>
-      <input type="text" name="email" id="email-label" placeholder="Enter your email">
+      <label for="email" id="email-label">Email <br></label>
+      <input type="email" name="email" id="email" placeholder="Enter your email" required="required">
       <br>
-      <label for="age"> Age <br> </label>
-      <input type="text" name="age" id="age-label" min="12" max="99" placeholder="Age">
-    </fieldset>
+      <label for="age" id="number-label"> Age <br> </label>
+      <input type="number" name="age" id="number" min="12" max="99" placeholder="Age">
 
-    <!-- Created one select and created six options-->
-    <form action="">
+      <!-- Created one select and created six options-->
       <p>Which option best describes your current role?</p>
       <select name="role" id="dropdown">
         <option value="select">Select current role</option>
@@ -37,20 +35,18 @@
         <option value="prefer">Prefer not to say</option>
         <option value="other">Other</option>
       </select>
-    </form>
 
-    <!-- Created three radios-->
-    <form action="">
+      <!-- Created three radios-->
       <p>Would you recommend Classic BootCamp to a friend?
         <br>
-        <input type="radio" name="recommend" id="check" checked="checked">Definitely
-        <input type="radio" name="recommend" id="check">Maybe
-        <input type="radio" name="recommend" id="check">Not sure
+        <input type="radio" name="recommend" id="check" value="definitley" checked="checked">Definitely
+        <input type="radio" name="recommend" id="check" value="maybe">Maybe
+        <input type="radio" name="recommend" id="check" value="not-sure">Not sure
       </p>
-    </form>
 
-    <!-- Created one select and created five options-->
-    <form action="">
+
+      <!-- Created one select and created five options-->
+
       <p>What is your favorite feature of Classic BootCamp?</p>
       <select name="features" id="dropdown">
         <option value="select">Select current role</option>
@@ -59,34 +55,38 @@
         <option value="community">Community</option>
         <option value="source">Open Source</option>
       </select>
-    </form>
 
-    <!-- Created 11 checkboxes-->
-    <form action="">
+
+      <!-- Created 11 checkboxes-->
+
       <p>What would you like to see improved?
         <br>
-        <input type="checkbox" name="improved" id="front">Front-end Projects
+        <input type="checkbox" name="improved" id="front" value="front">Front-end Projects
         <br>
-        <input type="checkbox" name="improved" id="back">Back-end Projects
+        <input type="checkbox" name="improved" id="back" value="back">Back-end Projects
         <br>
-        <input type="checkbox" name="improved" id="data">Data Visualization
+        <input type="checkbox" name="improved" id="data" value="data">Data Visualization
         <br>
-        <input type="checkbox" name="improved" id="challenges">Challenges
+        <input type="checkbox" name="improved" id="challenges" value="challenges">Challenges
         <br>
-        <input type="checkbox" name="improved" id="open">Open Source Community
+        <input type="checkbox" name="improved" id="open" value="open">Open Source Community
         <br>
-        <input type="checkbox" name="improved" id="gitter">Gitter help rooms
+        <input type="checkbox" name="improved" id="gitter" value="gitter">Gitter help rooms
         <br>
-        <input type="checkbox" name="improved" id="video">Videos
+        <input type="checkbox" name="improved" id="video" value="video">Videos
         <br>
-        <input type="checkbox" name="improved" id="meetup">City Meetups
+        <input type="checkbox" name="improved" id="meetup" value="meetup">City Meetups
         <br>
-        <input type="checkbox" name="improved" id="forum">Forum
+        <input type="checkbox" name="improved" id="forum" value="form">Forum
         <br>
-        <input type="checkbox" name="improved" id="courses">Addition Courses
+        <input type="checkbox" name="improved" id="courses" value="courses">Addition Courses
       </p>
-    </form>
-
+      <p>Any comments or suggestions?</p>
+      <textarea name="comments ">
+      Enter your comments here...
+    </textarea>
+      <input type="submit" id="submit">
+    </fieldset>
   </form>
 
 </body>
